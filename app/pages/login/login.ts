@@ -7,6 +7,7 @@ export * from './login-simple/login-simple';
 
 import {LoginSimplePage} from './login-simple/login-simple';
 import {LoginAdvancedPage} from './login-advanced/login-advanced';
+import {LoginCustomPage} from './login-custom/login-custom';
 
 
 @Page({
@@ -35,6 +36,7 @@ export class LoginPage {
     }
 
     this.pages = [
+      { title: 'Custom Login', component: LoginCustomPage },
       { title: 'Simple Login', component: LoginSimplePage },
       { title: 'Advanced Login', component: LoginAdvancedPage }
     ];
